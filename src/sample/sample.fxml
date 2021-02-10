@@ -34,18 +34,5 @@
         </menus>
       </MenuBar>
       <TextArea layoutX="166.0" layoutY="63.0" prefHeight="244.0" prefWidth="272.0" />
-      <WebView fontSmoothingType="GRAY" layoutX="475.0" layoutY="85.0" prefHeight="200.0" prefWidth="111.0">
-         <effect>
-            <Lighting bumpInput="$null">
-               <light>
-                  <Light.Distant>
-                     <color>
-                        <Color red="0.7078947424888611" green="0.25300681591033936" blue="0.25300681591033936" />
-                     </color>
-                  </Light.Distant>
-               </light>
-            </Lighting>
-         </effect>
-      </WebView>
    </children>
 </Pane>
