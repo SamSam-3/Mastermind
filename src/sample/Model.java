@@ -5,7 +5,7 @@ public class Model {
 
     public static String[] colors = {};
 
-    int attempt = 10; 
+    int attemptMax = 10; 
     int currAttempt = 0; 
     
     int difficulty = 4;
@@ -16,6 +16,10 @@ public class Model {
     public Model() {
         newCombination();
     } 
+
+    public void attempt(Raw raw) {
+
+    }
 
     void newCombination()  {
         combination = new Raw(difficulty);
