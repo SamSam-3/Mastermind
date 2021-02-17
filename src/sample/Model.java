@@ -3,7 +3,7 @@ package sample;
 public class Model {
     enum State{IN_PROGRESS, WIN,LOOSE}
 
-    public static String[] colors = {};
+    public static String[] colors = {"red", "orange"};
 
     int attemptMax = 10; 
     int currAttempt = 0; 
@@ -20,7 +20,7 @@ public class Model {
     public void attempt(Raw raw) {
 
     }
-
+    
     void newCombination()  {
         combination = new Raw(difficulty);
     }

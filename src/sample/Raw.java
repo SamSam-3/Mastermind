@@ -9,9 +9,11 @@ public class Raw {
             this.tokens[i] = randomColor();            
         }
     }
+
     public Raw(String[] tokens) {
         this.tokens = tokens;
     }
+
     private String randomColor() {
         return Model.colors[(int)(Math.random()* Model.colors.length)];
     }
