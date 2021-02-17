@@ -15,6 +15,7 @@ public class Controller {
         input.add(col);
         if (input.isComplete()) {
             model.attempt(input);
+            input.clear();
             return;
         }
     }
