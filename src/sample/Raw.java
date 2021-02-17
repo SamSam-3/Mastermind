@@ -17,12 +17,18 @@ public class Raw {
         currIndex++;
     }
     public boolean isComplete() {
-
+        return currIndex == tokens.length;
     }
 
     @Override
-    public boolean equals(Object raw) {
-          
+    public boolean equals(Object obj) {
+        Raw raw = (Raw)obj; 
+        for (int i = 0; i < tokens.length; i++) {
+            if (tokens[i] != raw.tokens[i]) {
+                return false;
+            } 
+        } 
+        return true;
     }
 
     private String randomColor() {
