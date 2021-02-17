@@ -1,7 +1,7 @@
 package sample;
 
 public class Raw {
-    String[] tokens ;
+    String[] tokens;
     int currIndex = 0;
 
     public Raw(int n) {
@@ -10,7 +10,7 @@ public class Raw {
         }
     }
     private String randomColor() {
-        return Modele.colors[(int)(Math.random()* Modele.colors.length)];
+        return Model.colors[(int)(Math.random()* Model.colors.length)];
     }
     
 }

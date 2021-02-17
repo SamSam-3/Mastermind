@@ -1,7 +1,7 @@
 package sample;
 
 public class Controller {
-    public Controller() {
+    public Controller(Model model) {
 
     } 
 }

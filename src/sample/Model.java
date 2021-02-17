@@ -1,17 +1,19 @@
 package sample;
 
-public class Modele {
+public class Model {
     enum State{IN_PROGRESS, WIN,LOOSE}
 
     public static String[] colors = {};
 
-    int tentative = 10; 
+    int attempt = 10; 
+    int currAttempt = 0; 
+    
     int difficulty = 4;
     State state = State.IN_PROGRESS;
     Raw combination;
     Raw[] proposition;
 
-    public Modele() {
+    public Model() {
         newCombination();
     } 
 
