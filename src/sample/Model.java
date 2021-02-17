@@ -12,6 +12,7 @@ public class Model {
     State state = State.IN_PROGRESS;
     Raw combination;
     Raw[] proposition;
+    
 
     public Model() {
         newCombination();
