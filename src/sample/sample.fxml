@@ -6,9 +6,9 @@
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane prefHeight="591.0" prefWidth="460.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ButtonBar buttonMinWidth="25.0" layoutY="447.0" prefHeight="40.0" prefWidth="157.0">
+      <ButtonBar buttonMinWidth="40.0" layoutY="537.0" prefHeight="56.0" prefWidth="460.0">
         <buttons>
           <Button id="jaune" mnemonicParsing="false" style="-fx-color: yellow;">
                <effect>
@@ -32,15 +32,15 @@
                   <ColorAdjust />
                </effect></Button>
             <Button id="blanc" mnemonicParsing="false" style="-fx-background-color: #ffff;" />
-            <Button id="noir" mnemonicParsing="false" style="-fx-background-color: black;" />
+            <Button id="noir" minWidth="23.0" mnemonicParsing="false" prefHeight="26.0" style="-fx-background-color: black;" />
         </buttons>
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
          <padding>
-            <Insets right="25.0" />
+            <Insets right="35.0" />
          </padding>
       </ButtonBar>
-      <Canvas id="canvas" height="437.0" width="323.0" />
+      <Canvas id="canvas" height="535.0" width="460.0" />
    </children>
 </Pane>
