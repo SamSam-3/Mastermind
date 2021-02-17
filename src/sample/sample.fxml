@@ -1,21 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
 
 <Pane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ButtonBar buttonMinWidth="25.0" layoutY="447.0" prefHeight="40.0" prefWidth="157.0">
         <buttons>
-            <Button mnemonicParsing="false" text="Jaune" />
-            <Button mnemonicParsing="false" text="Vert" />
-            <Button mnemonicParsing="false" text="Bleu" />
-            <Button mnemonicParsing="false" text="Rose" />
-            <Button mnemonicParsing="false" text="Rouge" />
-            <Button mnemonicParsing="false" text="Orange" />
-            <Button mnemonicParsing="false" text="Blanc" />
-            <Button mnemonicParsing="false" text="Noir" />
+          <Button id="jaune" mnemonicParsing="false" style="-fx-color: yellow;">
+               <effect>
+                  <ColorAdjust />
+               </effect></Button>
+            <Button id="vert" mnemonicParsing="false" style="-fx-background-color: #00ff05;">
+               <effect>
+                  <ColorAdjust />
+               </effect></Button>
+            <Button id="bleu" mnemonicParsing="false" style="-fx-background-color: blue;" />
+            <Button id="pink" mnemonicParsing="false" style="-fx-background-color: #e52397;">
+               <effect>
+                  <ColorAdjust />
+               </effect></Button>
+            <Button id="rouge" mnemonicParsing="false" style="-fx-background-color: red;">
+               <effect>
+                  <ColorAdjust />
+               </effect></Button>
+            <Button id="orange" mnemonicParsing="false" style="-fx-background-color: orange;">
+               <effect>
+                  <ColorAdjust />
+               </effect></Button>
+            <Button id="blanc" mnemonicParsing="false" style="-fx-background-color: #ffff;" />
+            <Button id="noir" mnemonicParsing="false" style="-fx-background-color: black;" />
         </buttons>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets right="25.0" />
+         </padding>
       </ButtonBar>
+      <Canvas id="canvas" height="437.0" width="323.0" />
    </children>
 </Pane>
