@@ -1,6 +1,5 @@
 package sample;
 
-
 public class Modele {
     enum State{IN_PROGRESS, WIN,LOOSE}
 
@@ -10,5 +9,8 @@ public class Modele {
     int difficulty = 4;
     State state = State.IN_PROGRESS;
 
-    
+    public Modele() {
+
+    } 
+
 }
