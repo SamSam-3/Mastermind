@@ -3,21 +3,19 @@ package sample;
 import java.util.ArrayList;
 
 public class Controller {
-    String[] colorInput; 
-    int currIndex = 0; 
+    Raw input; 
     Model model;
 
     public Controller(Model model) {
         this.model = model;
+        input = new Raw(model.difficulty); 
     } 
 
     public void inputColor(String col) {
-        colorInput[currIndex] = col;
-        if (currIndex == model.difficulty ) {
-            model.attempt(new Raw(colorInput));
-            currIndex = 0;
+        input.add(col);
+        if (input.isComplete()) {
+            model.attempt(input);
             return;
         }
-        currIndex++;
     }
 }

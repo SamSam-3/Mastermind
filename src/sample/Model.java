@@ -18,11 +18,19 @@ public class Model {
     } 
 
     public void attempt(Raw raw) {
+        currAttempt ++; 
+        if ( raw.equals(combination) ) {
+            state = State.WIN;
+        } else if (currAttempt == attemptMax) {
+            state = State.LOOSE;
+        } else {
 
+        }
     }
     
     void newCombination()  {
         combination = new Raw(difficulty);
+        combination.randomize();
     }
 
 }
