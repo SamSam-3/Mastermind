@@ -12,7 +12,7 @@ public class Model {
     State state = State.IN_PROGRESS;
     Raw combination;
     Raw[] proposition;
-    
+
 
     public Model() {
         newCombination();
@@ -22,9 +22,12 @@ public class Model {
         currAttempt ++; 
         if ( raw.equals(combination) ) {
             state = State.WIN;
+            System.out.println("WIN");
         } else if (currAttempt == attemptMax) {
             state = State.LOOSE;
+            System.out.println("LOOSE");
         } else {
+            System.out.println("try again");
 
         }
     }

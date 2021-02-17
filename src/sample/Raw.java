@@ -41,5 +41,9 @@ public class Raw {
         }
         currIndex = tokens.length;
     }
+
+    public void clear() {
+        currIndex = 0;
+    }
     
 }
