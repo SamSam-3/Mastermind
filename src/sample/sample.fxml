@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.*?>
-<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<Scene xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
-    <AnchorPane prefHeight="200" prefWidth="200">
-      <children>
-         <Canvas height="58.0" layoutY="190.0" width="207.0" />
-         <Canvas height="195.0" width="207.0" />
-      </children></AnchorPane>
-</Scene>
+<Pane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ButtonBar buttonMinWidth="25.0" layoutY="447.0" prefHeight="40.0" prefWidth="157.0">
+        <buttons>
+            <Button mnemonicParsing="false" text="Jaune" />
+            <Button mnemonicParsing="false" text="Vert" />
+            <Button mnemonicParsing="false" text="Bleu" />
+            <Button mnemonicParsing="false" text="Rose" />
+            <Button mnemonicParsing="false" text="Rouge" />
+            <Button mnemonicParsing="false" text="Orange" />
+            <Button mnemonicParsing="false" text="Blanc" />
+            <Button mnemonicParsing="false" text="Noir" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</Pane>
